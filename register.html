@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<main>
-    <section class="login-section">
-        <div class="login-box">
+    <main>
+        <section class="login-section">
+            <div class="login-box">
 
-            <h2>Create Account</h2>
+                <h2>Create Account</h2>
 
-            <form id="registerForm">
-                <label>Name</label>
-                <input type="text" id="name" required>
+                <form id="registerForm">
+                    <label>Name</label>
+                    <input type="text" id="name" required>
 
-                <label>Email</label>
-                <input type="email" id="regEmail" required>
+                    <label>Email</label>
+                    <input type="email" id="regEmail" required>
 
-                <label>Password</label>
-                <input type="password" id="regPassword" required>
+                    <label>Password</label>
+                    <input type="password" id="regPassword" required>
 
-                <button type="submit">Register</button>
+                    <button type="submit">Register</button>
 
-                <p id="registerMessage"></p>
-            </form>
+                    <p id="registerMessage"></p>
+                </form>
 
-        </div>
-    </section>
-</main>
+            </div>
+        </section>
+        <script>
+            document.getElementById("registerForm").addEventListener("submit", function (e) {
+                e.preventDefault();
 
-<script src="script.js"></script>
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("regEmail").value;
+                let password = document.getElementById("regPassword").value;
+
+                let user = {
+                    name: name,
+                    email: email,
+                    password: password
+                };
+
+                localStorage.setItem("user", JSON.stringify(user));
+
+                document.getElementById("registerMessage").style.color = "green";
+                document.getElementById("registerMessage").textContent =
+                    "Registration successful!";
+
+                setTimeout(function () {
+                    window.location.href = "index.html";
+                }, 2000);
+            });
+        </script>
+
 </body>
+
 </html>
