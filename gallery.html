@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <img src="assets\CGM logo.png" alt="CGM Logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Sign in</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="application.html">Application</a></li>
+                    <li><a href="animation.html">Animation</a></li>
+                    <li><a href="otherevents.html">Other Events</a></li>
+                    <li><a href="contact Us.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about Us.html">About Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="gallery-section">
+
+            <div class="gallery-container">
+
+                <h1>Gallery</h1>
+
+                <p class="gallery-intro">
+                    Explore moments from Cardigan Guidhall Market's events, facilities,
+                    community activities, vendor showcases,
+                    and special programmes through our gallery
+                </p>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+
+                    <img src="assets\galleryimage1.jpg" alt="Gallery Image 1" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage2.jpg" alt="Gallery Image 2" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage3.jpg" alt="Gallery Image 3" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage4.jpg" alt="Gallery Image 4" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage5.jpg" alt="Gallery Image 5" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage6.jpg" alt="Gallery Image 6" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage7.jpg" alt="Gallery Image 7" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage8.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage9.jpg" alt=" Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage10.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage11.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage12.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage13.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage14.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage15.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage16.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage17.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage18.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage19.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage20.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage21.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage22.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage23.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+                    <img src="assets\galleryimage24.jpg" alt="Gallery Image 8" onclick="openImage(this.src)">
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Image Popup -->
+    <div id="imagePopup" class="image-popup">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="popupImage">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById("imagePopup").style.display = "block";
+            document.getElementById("popupImage").src = src;
+        }
+
+        function closeImage() {
+            document.getElementById("imagePopup").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

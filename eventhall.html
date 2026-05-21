@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    function openImage(src) {
+        document.getElementById("imagePopup").style.display = "block";
+        document.getElementById("popupImage").src = src;
+    }
+
+    function closeImage() {
+        document.getElementById("imagePopup").style.display = "none";
+    }
+</script>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <img src="assets\CGM logo.png" alt="CGM Logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Sign in</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="application.html">Application</a></li>
+                    <li><a href="animation.html">Animation</a></li>
+                    <li><a href="otherevents.html">Other Events</a></li>
+                    <li><a href="contact Us.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about Us.html">About Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="facilities-section">
+            <div class="facilities-container">
+
+                <div class="facility-gallery">
+
+                    <img src="assets\eventhall1.jpg" alt="Wheelchair Access" onclick="openImage(this.src)">
+
+                    <img src="assets\eventhall2.jpg" alt="Accessible Facilities" onclick="openImage(this.src)">
+
+                    <img src="assets\eventhall3.jpg" alt="Accessible Facilities" onclick="openImage(this.src)">
+
+                    <img src="assets\eventhall4.jpg" alt="Accessible Facilities" onclick="openImage(this.src)">
+
+
+                </div>
+
+                <!-- Lightbox -->
+                <div id="imagePopup" class="image-popup">
+                    <span class="close-btn" onclick="closeImage()">&times;</span>
+                    <img id="popupImage">
+                </div>
+                <p>
+
+                    Our spacious event hall is designed to host community
+                    gatherings, celebrations, conferences, exhibitions,
+                    and special events in a comfortable and welcoming setting.
+                    The hall includes flexible seating arrangements,
+                    stage presentation space, lighting support,
+                    sound systems, and a well-organised environment
+                    suitable for both large and small events.
+                    Whether hosting family celebrations, cultural programmes,
+                    church gatherings, or exhibitions, our event hall
+                    provides a professional and inviting atmosphere.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

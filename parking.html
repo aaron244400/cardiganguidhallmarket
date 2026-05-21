@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    function openImage(src) {
+        document.getElementById("imagePopup").style.display = "block";
+        document.getElementById("popupImage").src = src;
+    }
+
+    function closeImage() {
+        document.getElementById("imagePopup").style.display = "none";
+    }
+</script>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <img src="assets\CGM logo.png" alt="CGM Logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Sign in</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="application.html">Application</a></li>
+                    <li><a href="animation.html">Animation</a></li>
+                    <li><a href="otherevents.html">Other Events</a></li>
+                    <li><a href="contact Us.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about Us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="facilities-section">
+            <div class="facilities-container">
+
+                <h1>Parking Area</h1>
+
+                <p class="facilities-intro">
+                    The market provides a large and organised car park for visitors,
+                    vendors, families, and event staff. The parking area is
+                    designed to provide safe access and smooth traffic flow
+                    during events and busy gatherings.
+                <section class="facilities-section">
+                    <div class="facilities-container">
+
+                        <div class="facility-gallery">
+
+                            <img src="assets\carpark 1.jpg" alt="Wheelchair Access" onclick="openImage(this.src)">
+
+                            <img src="assets\carpark 2.jpg" alt="Accessible Facilities" onclick="openImage(this.src)">
+
+                        </div>
+
+                        <div id="imagePopup" class="image-popup">
+                            <span class="close-btn" onclick="closeImage()">&times;</span>
+                            <img id="popupImage">
+                        </div>
+                        <p>
+                            The venue includes a spacious car park with clearly
+                            marked parking spaces and easy access to the main
+                            entrance and facilities.
+                        </p>
+
+                        <p>
+                            Dedicated charging and parking spaces are also available
+                            for two electric vehicles, helping support convenient
+                            and environmentally friendly travel.
+                        </p>
+
+                    </div>
+                </section>
+    </main>
+
+</body>
+
+</html>
